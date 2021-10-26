@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    background-color: #f7c2b1;
+}
+
+.container {
+    min-width: 400px;
+    background-color: #fff;
+    display: flex;
+    width: 25%;
+    height: 600px;
+    position: relative;
+    border: 2px solid #af8272;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+}
+
+.orderbox {
+    width: 390px;
+    min-width: 80%;
+    align-items: flex-start;
+}
+
+.order-heading {
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.order-column {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1.5px solid #af8272;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.col-heading {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item-heading {
+    width: 45%;
+    color: #333;
+    font-size: 19px;
+    padding-right: 10px;
+    margin-right: 200px;
+}
+
+.qty-heading {
+    width: 20%;
+    color: #333;
+    font-size: 19px;
+    margin-left: 40px;
+    justify-content: flex-end;
+}
+
+.order-row{
+    border-bottom: 1.5px solid #af8272;
+    margin-bottom: 15px;
+}
+
+.order-row #foodselect, #coffeeselect {
+    height: 34px;
+    width: 190px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    padding: 0;
+    text-align: left;
+    font-size: 19px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.order-row #coffeeprice, #foodprice {
+    font-family: inherit;
+    width: 20%;
+    margin-right: 20px;
+    font-size: 19px;
+    color: #333;
+}
+
+.order-row input {
+    font-family: inherit;
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+    font-size: 19px;
+}
+
+.totalbox {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.totalbox strong {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+    font-family: inherit;
+}
+
+#grandtotal {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+    font-family: inherit;
+}
+
+#checkout-btn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#checkout-btn button {
+    font-family: inherit;
+    font-size: large;
+    width: 150px;
+    height: 40px;
+    background: #af8272;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}

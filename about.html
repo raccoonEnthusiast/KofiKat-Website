@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>About Us</title>
+	<link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/097c292966.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    
+</head>
+<body>
+	<header id="header"></header>
+	<div id = "background">
+		<h1>About Us</h1>
+
+		<!--Map starts here-->
+		<div class="mapWrap">
+			<div class="map">
+				<iframe
+					width="950"
+					height="350"
+					frameborder="0" style="border:0"
+					padding-left= 20px;
+					src="" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+		<!--Big wrapper to store 2 other boxes-->
+		<div id = "aboutUsWrapper">
+			<!--First wrapper, on the left, that stores the business photo-->
+			<div id = "businessPhoto">
+				<div class = "image">
+					<img src="/images/about2.jpg" width="500" height="250">
+				</div>
+			</div>
+			<!--Second wrapper, on the right, that stores the information about the business-->
+			<div id = "aboutUs">
+				<div class = "aboutUsText">
+					<h1>
+						Opening Hours
+					</h1>
+					<div class = "openingHours">
+						Monday: Closed
+						<br>
+						Tuesday: Closed
+						<br>
+						Wednesday: Closed
+						<br>
+						Thursday: Closed
+						<br>
+						Friday: Closed
+						<br>
+						Saturday: Closed
+						<br>
+						Sunday: Closed
+					</div>
+					<h1>
+						About Us
+					</h1>
+					<p>Smol business</p>
+					<h1>
+						Contact Us
+					</h1>
+					Email: abc@gmail.com
+					<br>
+					Phone: 123456789
+					<br>
+					Address: 123 Tristram St, Hamilton Central, Hamilton 3200
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+
+	<script>
+
+		
+	jQuery(document).ready(function(){
+        jQuery("#header").load('header.html')
+    })
+
+    jQuery(document).ready(function(){
+        jQuery("#footer").load('footer.html')
+    })
+
+	</script>
+</body>
+</html>

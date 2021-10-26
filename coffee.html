@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/097c292966.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+</head>
+<body>
+
+<header id="header"></header>
+<div class="container"> <!-- Container of the whole page -->
+    <div class="top"> <!-- Container of the Header Image-->
+        <img src="images/header.jpg" class="img">
+    </div>
+    <div class="menuNav"> <!-- Container of the Product Navigation Bar-->
+        <div id ="nav_wrap">
+            <ul id="nav">
+                <li id="product"><a href="coffee.html">Coffee</a></li>
+                <li id="product"><a href="food.html">Food</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center"> <!-- Container of Both Columns of the Products -->
+        <div class="prodcontent"> <!-- Content Container for Coffee Page-->
+            <div class="column1"> <!-- 1st Column -->
+                <div class="column">
+                    <a href="order.html"><img src="images/coffee1.jpg" class="image"></a>
+                    <h3>Flat White - $5</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/coffee2.jpg" class="image"></a>
+                    <h3>Dalgona Latte - $10</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/coffee3.jpg" class="image"></a>
+                    <h3>Iced Coffee - $7</h3>
+                </div>
+            </div>
+            <div class="column2"> <!-- 2nd Column -->
+                <div class="column">
+                    <a href="order.html"><img src="images/strawberry.jpg" class="image"></a>
+                    <h3>Fresh Strawberry Milk - $11</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/bubbletea.jpg" class="image"></a>
+                    <h3>Bubble Milk Tea - $10</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/milkshake.jpg" class="image"></a>
+                    <h3>Milk Shake - $15</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
+        jQuery("#header").load('header.html')
+    })
+
+    jQuery(document).ready(function(){
+        jQuery("#footer").load('footer.html')
+    })
+
+</script>
+</body>
+</html>

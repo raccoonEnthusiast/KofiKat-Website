@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+    background-color: #f7c2b1;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+#background {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    margin-top: 40px;
+    padding:20px;
+    width: 1050px;
+    overflow: hidden; 
+    height: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+}
+
+/* Slideshow element starts here */
+/* Edit slideshow dimensions here */
+.slideshow{
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 10px 10px 18px; 
+}
+
+/* Element that all of the slide images sit in */
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+/* Each slide image here */
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide the radio buttons that appear beside slide 1*/
+.slides input {
+    display: none;
+}
+
+/* Slider navigation buttons */
+.navigation{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbtn{
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.navbtn:not(:last-child){
+    margin-right: 30px;
+}
+
+.navbtn:hover{
+    background: #fff;
+
+}
+
+/* Move each slide into frame when radio buttons are checked */
+#r1:checked ~ .s1{
+    margin-left: 0;
+
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+    
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+    
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+    
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
+    
+}
+
+/* Auto nav "buttons" are divs with the same dimensions as manual buttons
+   But when a button is checked the auto buttons fill in the button for the current slide */
+
+.auto-nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.auto-nav div{
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+/* Position the auto navigation buttons in the same spot as the manual buttons 
+Every child div of auto-navi except for the last child div has margin right 40px*/
+.auto-nav div:not(:last-child){
+    margin-right: 30px;
+}
+
+#r1:checked ~ .auto-nav .auto-nav1{
+    background: #fff;
+}
+
+#r2:checked ~ .auto-nav .auto-nav2{
+    background: #fff;
+}
+
+#r3:checked ~ .auto-nav .auto-nav3{
+    background: #fff;
+}
+
+#r4:checked ~ .auto-nav .auto-nav4{
+    background: #fff;
+}
+
+.wrapper2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Slideshow element ends here */
+
+.top {
+    padding: 5px;
+    display: flex;
+}
+
+.column {
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.image {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+}

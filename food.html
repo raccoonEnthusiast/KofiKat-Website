@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/097c292966.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+</head>
+<body>
+<header id="header"></header>
+<div class="container"> <!-- Container of the whole page -->
+    <div class="top"> <!-- Container of the Header Image-->
+        <img src="images/header.jpg" class="img">
+    </div>
+    <div class="menuNav"> <!-- Container of the Product Navigation Bar-->
+        <div id ="nav_wrap">
+            <ul id="nav">
+                <li id="product"><a href="coffee.html">Coffee</a></li>
+                <li id="product"><a href="food.html">Food</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center"> <!-- Container of Both Columns of the Products -->
+        <div class="prodcontent"> <!-- Content Container for Coffee Page-->
+            <div class="column1"> <!-- 1st Column -->
+                <div class="column">
+                    <a href="order.html"><img src="images/croffle.jpg" class="image"></a>
+                    <h3>Croffle - $19</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/sandwich.jpg" class="image"></a>
+                    <h3>Sandwich - $12</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/waffle.jpg" class="image"></a>
+                    <h3>Waffle - $18</h3>
+                </div>
+            </div>
+            <div class="column2"> <!-- 2nd Column -->
+                <div class="column">
+                    <a href="order.html"><img src="images/cake.jpg" class="image"></a>
+                    <h3>Salted Caramel Cake - $5</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/cake2.jpg" class="image"></a>
+                    <h3> Carrot Cake - $35</h3>
+                </div>
+                <div class="column">
+                    <a href="order.html"><img src="images/macaroon.jpg" class="image"></a>
+                    <h3>Macaroon - $8 each</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
+        jQuery("#header").load('header.html')
+    })
+
+    jQuery(document).ready(function(){
+        jQuery("#footer").load('footer.html')
+    })
+
+</script>
+</body>
+</html>

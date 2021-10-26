@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="https://kit.fontawesome.com/097c292966.js" crossorigin="anonymous"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+header#main_header {
+	background-color: #f7c2b1;
+	margin-bottom: 20px;
+}
+
+header#main_header nav.util_menu1{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+header#main_header ul.util_wrap1 {
+	width: 366px;
+	float: left;
+}
+header#main_header ul.util_wrap1>li {
+	float: left;
+	width: 120px;
+	background-color:transparent;
+	margin-right: 2px;
+}
+header#main_header ul.util_wrap1 .icon{
+	padding-top: 10px;
+}
+header#main_header ul.util_wrap1>li> a {
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	position: relative;
+}
+header#main_header  ul.util_wrap2 {
+	float: right;
+}
+header#main_header  ul.util_wrap2>li {
+	float: left;
+}
+header#main_header ul.util_wrap2>li>a {
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 0.8em;
+	float: left;
+	margin-right: 10px;
+}
+
+div#main_wrapper{
+	background-color: #fff;
+}
+div#main_wrapper .main_wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+#main_wrapper .main_wrap div.logo {
+	width:220px;
+	height: 120px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	float: left;
+}
+div#main_wrapper .main_wrap div.main_menu {
+	width: 550px;
+	float: right;
+}
+div#main_wrapper .main_wrap div.main_menu li{
+	float: left;
+	width: 130px;
+	margin-top: 40px;
+}
+div#main_wrapper .main_wrap div.main_menu li>a{
+	display: block;
+	text-align: center;
+	color: #595959;
+	line-height: 40px;
+}
+div#main_wrapper .main_wrap div.main_menu li>a:focus {
+	background-color: #f7c2b1;
+}
+div#main_wrapper .main_wrap div.main_menu li>a:hover {
+	background-color: #f7c2b1;
+}
+
+div#main_wrapper div.main_btn {
+	float: right;
+}
+div#main_wrapper div.main_btn a {
+	display: block;
+	margin-top: 40px;
+}
+
+	</style>
+</head>
+<body>
+    <header id="main_header">  <!-- w100% -->
+		<div class="main_util"> 
+			<nav class="util_menu1 clearfix"> <!-- w1200 h40 -->
+				<ul class="util_wrap1 clearfix">
+					<li><a href="#">WELCOME</a></li>
+					<li><a href="#">TO</a></li>
+					<li><a href="#">KOPI KAT</a></li>
+				</ul>
+			<div class="util_menu2 clearfix">	
+				<ul class="util_wrap2 clearfix"> <!-- login icon -->
+					<li class="icon"><a href="#"><i class="far fa-user fa-lg"></i></a></li>
+				</ul>
+			</div>
+			</nav>
+		</div>
+		<div id="main_wrapper"> <!-- menu bar (nav bar) -->
+			<div class="main_wrap clearfix">
+				<div class="logo"><a href="main.html"><img src="images/logo02.png" alt=""></a></div>
+				<div class="main_menu">
+					<ul class="clearfix"> <!-- clearfix (prevent layout breakage due to float)-->
+						<li><a href="coffee.html">MENU</a></li>
+						<li><a href="order.html">ORDER</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="promotion.html">PROMOTION</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</header>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/promo.css">
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/097c292966.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id = "background">
+            <div id = "wrapper">
+                <div id = "first">
+                    <div class = "image">
+                        <img src="/images/Promotion-1.png" width="250" height="250">
+                    </div>
+                    <div class = "text">
+                        <p> For every 10 items that you purchase, you will get a regular drink of our choice!
+                            
+                        </p>
+                    </div>
+                </div>
+    
+                <div id = "second">
+                    <div class = "image">
+                        <img src="/images/Promotion-2.png" width="250" height="250">
+                    </div>
+                    <div class = "text">
+                        <p> 
+                            A free cookie is available whenever we feel like giving it away.<br>
+                            Come grab one now!
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+            <div id = "wrapper2">
+                <div class="slideshow middle">
+                    <div class="slides">
+                        <input type="radio" name="r-btn" id="r1">
+                        <input type="radio" name="r-btn" id="r2">
+                        <input type="radio" name="r-btn" id="r3">
+                        <input type="radio" name="r-btn" id="r4">
+                        <!--Slides-->
+                        <div class="slide s1">
+                            <img src="images/Banner-1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/Banner-2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/Banner-3.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/Banner-1.png">
+                        </div>
+                        <!-- Auto navigation buttons-->
+                        <div class="auto-nav">
+                            <div class="auto-nav1"></div>
+                            <div class="auto-nav2"></div>
+                            <div class="auto-nav3"></div>
+                            <div class="auto-nav4"></div>
+                        </div>
+                    </div>
+                    <!-- Manual navigation buttons -->
+                    <div class="navigation">
+                        <label for="r1" class="navbtn"></label>
+                        <label for="r2" class="navbtn"></label>
+                        <label for="r3" class="navbtn"></label>
+                        <label for="r4" class="navbtn"></label>
+                    </div>
+                </div>
+        
+                </div>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+
+        <script type="text/javascript">
+            var counter = 1;
+
+            setInterval(function(){
+                document.getElementById('r' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 9000);
+
+            jQuery(document).ready(function(){
+                jQuery("#header").load('header.html')
+        })
+
+            jQuery(document).ready(function(){
+                jQuery("#footer").load('footer.html')
+        })
+        </script>  
+    </body>
+</html>

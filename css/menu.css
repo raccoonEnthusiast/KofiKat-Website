@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+    background-color: #f7c2b1;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container { /* Container of the whole page */
+            background-color: #f7c2b1;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .top { /* Container of the Header Image*/
+        /*    background-color: chartreuse; */
+            padding: 10px;
+            display: flex;
+            margin: auto; 
+            width: fit-content;
+            position: relative;
+        }
+        .img { /* Header Image */
+            /*    background-color: black; */
+                min-width: 50%;
+                max-width: 90%;
+                margin: auto;
+                float: none;
+        }
+        .menuNav { /* Container of the Product Navigation Bar*/
+            /*    background-color: brown; */
+                padding: 10px;
+                display: flex;
+        }
+
+        #nav_wrap { /* Created this to center the product navigation bar in the menuNav container */
+            /*    background-color: darkred; */
+                margin: auto;
+                padding: 5px;
+                height: 85px;
+                width: fit-content;
+        }
+
+        #nav{
+                list-style:none;
+        }
+        
+        #product { /* Navigation Bar LI ID */
+            list-style:none;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+        }
+        #product:hover {
+            background-color: #f7c2b1;
+        }
+
+        #nav{ /* The Navigation Bar UL ID */
+            background-color:#ffffff;
+            margin: auto;
+            padding: 0;
+            width: fit-content;
+            list-style: none;
+            overflow: hidden;
+            position: sticky;
+        }   
+        #nav li { 
+            float: left;
+        }
+        
+        #nav a { /* Navigation Links */
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .prodcontent { /* Content Container of Both Food and Coffee */
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            position: relative;
+            margin: auto;
+            padding: 5px;  
+        }
+
+        .column1 {
+        /*    background-color: silver; */
+            padding: 10px;
+            display: flex;
+	        width: 100%;
+        }
+        
+        .column2 {
+        /*    background-color: blueviolet; */
+            padding: 10px;
+            display: flex;
+            width: 100%;
+        }
+
+        .column { /* Container for each Product */
+        /*    background-color: blue; */
+            flex: 33.33%;
+            width: fit-content;
+            margin: 5px;
+            padding-bottom: 10px;
+            border: 1px solid #f7c2b1;;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .image { /* Product Images */
+        /*    background-color: aqua; */
+            justify-content: space-around;
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+        }
+        h3 {
+            text-align: center;
+        }
+        

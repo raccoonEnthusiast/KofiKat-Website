@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/order.css">
+    <title>Order Form</title>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <div class="orderbox">
+            <h2 class = "order-heading">Cart</h2>
+            <div class="col-heading">
+                <span class="item-heading order-column">Item</span> 
+               <!--<span class="price-heading order-column">Price</span> -->   
+                <span class="qty-heading order-column">Quantity</span>
+            </div>
+            <div class="order-row">
+                <select id="coffeeselect" required>
+                    <option value="0.00" selected>Select Coffee</option>
+                    <option value="5.00">Flat White</option>
+                    <option value="10.00">Dalgona Latte</option>
+                    <option value="7.00">Iced Coffee</option>
+                    <option value="11.00">Fresh Strawberry Milk</option>
+                    <option value="10.00">Bubble Milk Tea</option>
+                    <option value="15.00">Milk Shake</option>
+                </select>
+                <span id="coffeeprice">$0.00</span>
+                <input type="number" id="coffeeqty" min="0" value="0" required>
+            </div>
+            <div class="order-row">
+                <select id="foodselect" required>
+                    <option value="0.00" selected>Select Food</option>
+                    <option value="19.00">Croffle</option>
+                    <option value="12.00">Sandwich</option>
+                    <option value="18.00">Waffle</option>
+                    <option value="5.00">Salted Caramel Cake</option>
+                    <option value="35.00">Carrot Cake </option>
+                    <option value="8.00">Macaroon</option>
+                </select>
+                <span id="foodprice">$0.00</span>
+                <input type="number" id="foodqty" min="0" value="0" required>
+            </div>
+            <div class="totalbox">
+                <Strong>Total:</Strong>
+                <span id="grandtotal">$0.00</span>
+            </div>
+            <div id="checkout-btn">
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+        //Header and Footer
+        jQuery(document).ready(function(){
+        jQuery("#header").load('header.html')
+        })
+
+        jQuery(document).ready(function(){
+        jQuery("#footer").load('footer.html')
+        })
+    </script>
+    <script src="js/order.js"></script>
+</body>
+</html>
